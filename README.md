@@ -14,13 +14,13 @@ From the root folder, type the following in a terminal:
 
 # Run the app
 
-Once compile, simply run
+Once compiled, simply run:
 
 `$ ./app/example`
 
 # Modifications from original branch
 
-- restructure file/folder of the project
+- restructure files/folders of the project
 - cmake compilation
 - port to glew + glfw (submodules)
 - port to OpenGL 3.3 core profile (glBegin -> shader)
