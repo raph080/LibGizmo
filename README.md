@@ -1,5 +1,7 @@
 This fork comes from Cedric Guillemet's project https://github.com/CedricGuillemet/LibGizmo.
 
+![Improved LibGizmo](libgizmo.png)
+
 # Build
 
 From the root folder, type the following in a terminal:
