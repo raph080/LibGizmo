@@ -4,7 +4,9 @@ project (example)
 
 # The main executable
 add_executable(${PROJECT_NAME}
-  example.cpp
+  main.cpp
+  renderer.cpp
+  engine.cpp
 )
 
 set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 11)

@@ -9,6 +9,9 @@
 #include <sstream>
 #include <string>
 
+using namespace std;
+using namespace glm;
+
 class Shader
 {
 public:
@@ -189,36 +192,4 @@ private:
     }
 };
 
-class Flag
-{
-public:
-    Flag(GLenum flag)
-    {
-        id = flag;
-        isEnabled = glIsEnabled(id);
-    }
-    static Flag enable(GLenum flag)
-    {
-        Flag obj = Flag(flag);
-        glEnable(flag);
-        return obj;
-    }
-    static Flag disable(GLenum flag)
-    {
-        Flag obj = Flag(flag);
-        glDisable(flag);
-        return obj;
-    }
-    void restore()
-    {
-        if (isEnabled)
-            glEnable(id);
-        else
-            glDisable(id);
-    }
-
-private:
-    GLenum id;
-    bool isEnabled;
-};
 #endif

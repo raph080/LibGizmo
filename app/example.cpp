@@ -1,6 +1,5 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-#include <OpenGL/glu.h>
 #include <stdio.h> // Header File For Standard Input/Output
 
 #include "utils.h"
